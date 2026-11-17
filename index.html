@@ -1,0 +1,474 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puskesmas Surabaya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4fafa;
+            color: #333;
+        }
+
+        header {
+            background: #087e78;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b8fff1;
+        }
+
+        .hero {
+            min-height: 420px;
+            background: linear-gradient(
+                rgba(0, 80, 75, 0.75),
+                rgba(0, 80, 75, 0.75)
+            ),
+            url("https://images.unsplash.com/photo-1584982751601-97dcc096659c");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: #ffc857;
+            color: #333;
+            padding: 13px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            color: #087e78;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .profil {
+            text-align: center;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .kartu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .kartu {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px #00000012;
+            transition: 0.3s;
+        }
+
+        .kartu:hover {
+            transform: translateY(-5px);
+        }
+
+        .ikon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .kartu h3 {
+            color: #087e78;
+            margin-bottom: 12px;
+        }
+
+        .kartu p {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .warna {
+            background: #e2f5f1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #087e78;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f0f8f6;
+        }
+
+        .galeri {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .galeri img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .maps {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 15px;
+        }
+
+        .kontak {
+            background: #087e78;
+            color: white;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .kontak h2 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #075b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>🏥 Puskesmas Surabaya</h2>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#jadwal">Jadwal</a>
+            <a href="#fasilitas">Fasilitas</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- BERANDA -->
+    <div class="hero" id="beranda">
+        <div>
+            <h1>Selamat Datang di Puskesmas Surabaya</h1>
+            <p>
+                Melayani masyarakat dengan sepenuh hati
+                untuk mewujudkan hidup sehat dan berkualitas.
+            </p>
+            <a href="#layanan" class="tombol">Lihat Layanan</a>
+        </div>
+    </div>
+
+    <!-- PROFIL -->
+    <section id="profil">
+        <h2 class="judul">Profil Puskesmas</h2>
+
+        <div class="profil">
+            <p>
+                Puskesmas merupakan fasilitas pelayanan kesehatan
+                tingkat pertama yang menyediakan pelayanan kesehatan
+                kepada masyarakat. Puskesmas membantu masyarakat
+                menjaga kesehatan, mencegah penyakit, serta memberikan
+                pengobatan dan pemeriksaan kesehatan.
+            </p>
+
+            <br>
+
+            <h3 style="color:#087e78;">Visi</h3>
+            <p>
+                Mewujudkan masyarakat yang sehat, mandiri,
+                dan memiliki kualitas hidup yang baik.
+            </p>
+
+            <br>
+
+            <h3 style="color:#087e78;">Misi</h3>
+            <p>
+                1. Memberikan pelayanan kesehatan yang berkualitas.<br>
+                2. Meningkatkan kesadaran masyarakat tentang kesehatan.<br>
+                3. Melakukan pencegahan dan pengendalian penyakit.<br>
+                4. Memberikan pelayanan yang ramah dan profesional.
+            </p>
+        </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="warna" id="layanan">
+        <h2 class="judul">Layanan Kesehatan</h2>
+
+        <div class="kartu-container">
+
+            <div class="kartu">
+                <div class="ikon">🩺</div>
+                <h3>Pemeriksaan Umum</h3>
+                <p>Pemeriksaan kesehatan dan konsultasi dengan tenaga medis.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🦷</div>
+                <h3>Kesehatan Gigi</h3>
+                <p>Pemeriksaan dan perawatan kesehatan gigi dan mulut.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">💉</div>
+                <h3>Imunisasi</h3>
+                <p>Pelayanan imunisasi untuk membantu mencegah penyakit.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🤰</div>
+                <h3>Kesehatan Ibu dan Anak</h3>
+                <p>Pemeriksaan ibu hamil, bayi, dan tumbuh kembang anak.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">💊</div>
+                <h3>Pelayanan Obat</h3>
+                <p>Pelayanan dan pemberian obat sesuai resep dokter.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🧪</div>
+                <h3>Laboratorium</h3>
+                <p>Pemeriksaan laboratorium sesuai fasilitas yang tersedia.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JADWAL -->
+    <section id="jadwal">
+        <h2 class="judul">Jadwal Pelayanan</h2>
+
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Jam Pelayanan</th>
+            </tr>
+
+            <tr>
+                <td>Senin</td>
+                <td>08.00 - 14.00</td>
+            </tr>
+
+            <tr>
+                <td>Selasa</td>
+                <td>08.00 - 14.00</td>
+            </tr>
+
+            <tr>
+                <td>Rabu</td>
+                <td>08.00 - 14.00</td>
+            </tr>
+
+            <tr>
+                <td>Kamis</td>
+                <td>08.00 - 14.00</td>
+            </tr>
+
+            <tr>
+                <td>Jumat</td>
+                <td>08.00 - 11.00</td>
+            </tr>
+
+            <tr>
+                <td>Sabtu dan Minggu</td>
+                <td>Tutup / sesuai kebijakan puskesmas</td>
+            </tr>
+        </table>
+
+        <p style="text-align:center; margin-top:15px;">
+            <b>Catatan:</b> Jadwal di atas hanya contoh. Periksa jadwal resmi
+            puskesmas sebelum berkunjung.
+        </p>
+    </section>
+
+    <!-- FASILITAS -->
+    <section class="warna" id="fasilitas">
+        <h2 class="judul">Fasilitas Puskesmas</h2>
+
+        <div class="kartu-container">
+
+            <div class="kartu">
+                <div class="ikon">🏥</div>
+                <h3>Ruang Pemeriksaan</h3>
+                <p>Tempat untuk melakukan pemeriksaan kesehatan pasien.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🪑</div>
+                <h3>Ruang Tunggu</h3>
+                <p>Tempat pasien menunggu giliran pelayanan.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">💊</div>
+                <h3>Apotek</h3>
+                <p>Tempat pelayanan dan pengambilan obat.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🔬</div>
+                <h3>Laboratorium</h3>
+                <p>Tempat pemeriksaan sampel kesehatan.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri">
+        <h2 class="judul">Galeri Kesehatan</h2>
+
+        <div class="galeri">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
+                 alt="Pemeriksaan kesehatan">
+
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309"
+                 alt="Pelayanan kesehatan">
+
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118"
+                 alt="Tenaga medis">
+
+            <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c"
+                 alt="Kegiatan kesehatan">
+        </div>
+    </section>
+
+    <!-- LOKASI -->
+    <section class="warna" id="lokasi">
+        <h2 class="judul">Lokasi Puskesmas</h2>
+
+        <p style="text-align:center; margin-bottom:20px;">
+            Lihat lokasi berbagai Puskesmas yang berada di wilayah Surabaya.
+        </p>
+
+        <iframe
+            class="maps"
+            src="https://maps.google.com/maps?q=puskesmas%20Surabaya&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+        <p style="text-align:center; margin-top:15px;">
+            <a href="https://www.google.com/maps/search/Puskesmas+Surabaya/"
+               target="_blank">
+                Buka Google Maps
+            </a>
+        </p>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="kontak" id="kontak">
+        <h2>Hubungi Kami</h2>
+
+        <p>🏥 Puskesmas Wilayah Surabaya</p>
+        <p>📍 Kota Surabaya, Jawa Timur, Indonesia</p>
+        <p>📞 Silakan hubungi puskesmas tujuan melalui kontak resminya.</p>
+        <p>🌐 Informasi lokasi dapat dilihat melalui Google Maps.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Website Puskesmas Surabaya.
+            Dibuat untuk tugas pembelajaran HTML.
+        </p>
+    </footer>
+
+</body>
+</html>
